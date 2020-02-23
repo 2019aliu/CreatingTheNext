@@ -12,5 +12,5 @@ unemployment_rate = unemployment_data.get_collection('unemployment_rate')
 def getCollection(name):
     return unemployment_data.get_collection(name)
 
-unemployment_rate = getCollection('unemployment_rate')
-print(unemployment_rate.find_one({'date': '1948-06-01'})['unemployment'])
+# unemployment_rate = getCollection('unemployment_rate')
+# print(unemployment_rate.find_one({'date': '1948-06-01'})['unemployment'])
