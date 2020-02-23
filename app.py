@@ -21,7 +21,7 @@ def homeless():
 
 @app.route('/gdp')
 def gdp():
-    return render_template('gdp.html')
+    return render_template('county-unemployment.html')
 
 
 @app.route("/test")
@@ -39,6 +39,7 @@ def relplot1():
 @app.route("/global-unemployment")
 def glob_unemp():
     return render_template('global-unemployment.html')
+
 
 
 if __name__ == '__main__':
