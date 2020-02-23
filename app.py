@@ -1,6 +1,7 @@
 import db
 from flask import Flask, redirect, url_for, render_template, request, send_file, make_response
 from socio_visual import do_plot
+from io import StringIO
 app = Flask(__name__)
 
 
