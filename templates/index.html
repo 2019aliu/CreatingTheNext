@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Creating the Next</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.1.0/react.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.1.0/react-dom.min.js"></script>
+    <!--    <script src="https://unpkg.com/react@16/umd/react.production.min.js"></script>-->
+    <!--    <script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>-->
+    <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+</head>
+
+<body>
+<div class="container">
+    <h1>Creating the Next</h1>
+    <br>
+    <div id="content"></div>
+</div>
+
+<script type="text/jsx">
+    let realPython = React.createClass({
+        render: function () {
+            return (<h2>Greetings, from Real Python!</h2>);
+        }
+    });
+
+    ReactDOM.render(
+        React.createElement(realPython, null),
+        document.getElementById('content')
+    );
+</script>
+</body>
+</html>
