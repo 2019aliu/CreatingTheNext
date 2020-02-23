@@ -2,11 +2,15 @@ import db
 from flask import Flask, redirect, url_for, render_template, request, send_file, make_response
 from socio_visual import do_plot
 from io import StringIO
+import
 app = Flask(__name__)
 
 
 @app.route('/')
 def index():
+    img = StringIO()
+
+    plt.plot()
     return render_template('index.html')
 
 
